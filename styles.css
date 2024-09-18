@@ -1,0 +1,187 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #backToTop:hover {
+    background-color: #8a8a8a;
+    color: white;
+  }
+
+#backToTop.show {
+    opacity: 0.7;
+}   
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, black, rgb(70, 68, 68));
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 40px;
+    transition: transform 0.3s;
+    text-shadow: 0 5px 10px white;
+}
+
+header h1:hover {
+    transform: scale(1.2);
+}
+
+header h1:active {
+    transform: rotateY(180deg);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+}
+
+nav a:active {
+    transform: scale(0.9);
+}
+
+
+
+/* Seções */
+
+
+
+main h2{
+    text-align: center;
+    transition: transform 0.3s;
+    text-shadow: 0 5px 10px white;
+    font-size: 25px;
+}
+
+main h2:hover{
+    transform: scale(1.3);
+}
+
+section {
+    padding: 15px 20px;
+    margin-top: 60px;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden; /* Para esconder o conteúdo que ultrapassar */
+}
+
+.accordion-header {
+    cursor: pointer;
+}
+
+.arrow {
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content{
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Adiciona transição à opacidade */
+    display: none;
+}
+
+
+.container {
+    background: linear-gradient(to bottom, black, rgb(70, 68, 68));
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Lista de contato */
+
+#contato .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.myPic{
+    border-radius: 10%;
+    height: 12em;
+    margin-right: 20px;
+}
+
+#contato ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+#contato li {
+    margin: 10px 0 0px;
+    text-align: justify;
+}
+
+#contato li a {
+    color: white;
+    font-weight: bold;
+}
+
+#contato i {
+    margin-right: 10px;
+}
+
+/*experiencias*/
+
+.cargo-info{
+    text-align: justify;
+}
