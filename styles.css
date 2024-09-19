@@ -8,16 +8,21 @@ body {
     position: relative;
 }
 
+a {
+    color: white;
+    font-weight: bold;
+}
+
 #backToTop {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,11 +98,7 @@ nav a:active {
     transform: scale(0.9);
 }
 
-
-
 /* Seções */
-
-
 
 main h2{
     text-align: center;
@@ -120,13 +121,16 @@ section {
     margin-bottom: 10px;
     border-radius: 20px;
     overflow: hidden; /* Para esconder o conteúdo que ultrapassar */
+    box-shadow: 0 0 10px white;
+
 }
 
 .accordion-header {
     cursor: pointer;
+
 }
 
-.arrow {
+.arrow{
     margin-right: 5px;
     transition: transform 0.3s ease-in-out;
 }
@@ -171,10 +175,7 @@ section {
     text-align: justify;
 }
 
-#contato li a {
-    color: white;
-    font-weight: bold;
-}
+
 
 #contato i {
     margin-right: 10px;
@@ -184,4 +185,16 @@ section {
 
 .cargo-info{
     text-align: justify;
+}
+
+/*Portfolio*/
+.container-projects{
+    display: flex;
+    margin: 50px;
+    text-align: justify;
+}
+
+.port-img{
+    margin: 0 20px;
+    height: 300px; width: 500px; border-radius: 10%;
 }
