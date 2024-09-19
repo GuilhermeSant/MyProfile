@@ -28,7 +28,6 @@ window.scrollTo({ top: 0, behavior: 'smooth'  
 });
 });
 
-
 //exibir e fechar conteudo
 const accordionItems = document.querySelectorAll('.accordion-item');
 
