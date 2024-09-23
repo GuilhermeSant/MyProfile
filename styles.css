@@ -209,11 +209,14 @@ footer{
 
 .footer-item{
     display: flex;
-    margin: 0 15em;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 0;
+    margin: 0;
 }
 
 .footer-port{
-    padding: 0 10px;
+    padding: 0 10%;
 
 }
 
