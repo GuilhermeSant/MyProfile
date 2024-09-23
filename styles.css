@@ -194,5 +194,106 @@ section {
 
 .port-img{
     margin: 0 20px;
-    height: 300px; width: 500px; border-radius: 10%;
+    height: 300px; 
+    width: 500px;
+    border-radius: 10%;
+}
+
+footer{
+    background: linear-gradient(to bottom, black, rgb(70, 68, 68));
+    padding: 50px;
+    text-align: center;
+
+
+}
+
+.footer-item{
+    display: flex;
+    margin: 0 15em;
+}
+
+.footer-port{
+    padding: 0 10px;
+
+}
+
+.footer-port img{
+    height: 80px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .container-projects {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .port-img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #contato .container {
+        flex-direction: column;
+    }
+
+    .myPic {
+        margin: 0 0 20px 0;
+    }
+
+    .cargo-info{
+        text-align: justify;
+        word-spacing: -2px;
+
+    }
+
+    .cargo-info li{
+        margin-bottom: 12px;
+    }
+
+    #backToTop{
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .footer-item{
+        margin: 0 2em;
+    }
+}
+
+@media (hover: none) {
+    nav a:hover {
+        transform: none;
+    }
+    main h2:hover{
+        transform: none;
+    }
 }
